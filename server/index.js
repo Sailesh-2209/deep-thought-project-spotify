@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 
 const CLIENT_ID = process.env.CLIENT_ID;
 const CLIENT_SECRET = process.env.CLIENT_SECRET;
-const redirectUri = "http://localhost:3000/";
+const redirectUri = "https://deepthoughtspotify.netlify.app/";
 
 app.use(cors());
 app.use((req, res, next) => {
