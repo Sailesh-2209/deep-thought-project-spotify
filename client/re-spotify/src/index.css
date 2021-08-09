@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-dark);
+}
+
+:root {
+  --green-primary: #00ff00;
+  --green-secondary: #50cb93;
+  --green-blue: #71efa3;
+  --green-light: #acffad;
+  --green-dark: #1faa00;
+  --bg-primary: #dddddd;
+  --bg-light: #ffffff;
+  --bg-dark: #bcbcbc;
+  --text-dark: #000000;
+  --text-medium: #888888;
+  --text-light: #ffffff;
+  --button-primary: #aa00ff;
+}
+
+/* LOGIN PAGE BEGIN */
+
+.login-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-primary);
+}
+
+.login-button {
+  width: 300px;
+  height: auto;
+  margin: auto;
+  background-color: var(--green-dark);
+  border-radius: 5px;
+  text-align: center;
+  padding: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login-button a {
+  text-decoration: none;
+  outline: none;
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--text-light);
+}
+
+/* LOGIN PAGE END */
+
+/* HOME PAGE BEGIN */
+
+.home-container {
+  width: 100vw;
+  height: 100%;
+  background-color: var(--bg-primary);
+}
+
+.home-navbar {
+  width: 100vw;
+  height: auto;
+  position: fixed;
+  top: 0%;
+  background-color: var(--bg-dark);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px 10px;
+}
+
+.home-navbar button {
+  background-color: var(--button-primary);
+  color: var(--text-light);
+  width: 130px;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home-cards-container {
+  padding: 150px 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.home-card {
+  margin: 20px 10px;
+  background-color: var(--bg-light);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.home-card img {
+  height: 300px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+/* HOME PAGE END */
+
+/* SEARCH PAGE START */
+.search-container {
+  padding: 150px 50px;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-bar {
+  margin: auto;
+}
+
+.search-bar input {
+  width: 500px;
+  background-color: var(--bg-light);
+  font-size: 18px;
+  color: var(--text-medium);
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  padding: 20px;
+}
+/* SEARCH PAGE END */
+
+/* NEW RELEASES PAGE */
+
+.new-container,
+.categories-container {
+  padding: 150px 50px;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.new-card-container,
+.category-card {
+  margin: 20px;
+  background-color: var(--bg-light);
+  max-width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.new-card-container a {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-card-container img,
+.category-card img {
+  width: 300px;
+  height: 300px;
+}
+
+/* NEW RELEASES PAGE END */
